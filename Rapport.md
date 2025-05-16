@@ -40,6 +40,26 @@ secure-logging-system/
 | **Chart.js**     | Visualisation efficace sans backend complexe                 |
 | **dotenv**       | Configuration séparée et versionnable                      |
 
+
+secure-logging-system/
+├── api.py                  # API Flask principale
+├── db_connector.py         # Connexion MongoDB (via .env)
+├── insert_logs.py          # Générateur de logs classiques
+├── test_anomaly.py         # Générateur de logs anormaux (test)
+├── anomaly_detection.py    # Détection d'anomalies via console
+├── backup_mongodb.py
+├── logs_generator.py
+├── creation_admin.py   
+├── templates/              # Templates HTML (Flask)
+│   ├── home.html
+│   ├── api.html
+│   └── dashboard.html
+├── requirements.txt
+├── Dockerfile
+├── docker-compose.yml
+├── .env                    # Variables d'environnement MongoDB
+└── README.md
+
 ---
 
 ## 3. Requêtes utilisées pour l’analyse
